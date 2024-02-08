@@ -3,15 +3,23 @@
 @tailwind utilities;
 
 :root {
-  --main-blue: #0079ff;
-  --background: #f6f8ff;
-  --foreground: #fefefe;
+    --main-blue: #0079ff;
+    --background: #f6f8ff;
+    --foreground: #fefefe;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--background);
 }
