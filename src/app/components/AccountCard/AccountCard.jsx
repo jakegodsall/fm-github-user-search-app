@@ -6,7 +6,7 @@ import StatsSection from "./StatsSection";
 export default function AccountCard() {
     return (
         <Card>
-            <div className=" max-w-[33rem] p-12">
+            <div className=" max-w-[33rem] p-[2.4rem]">
                 <div className="mb-[3.4rem]">
                     <AccountHeader />
                 </div>
