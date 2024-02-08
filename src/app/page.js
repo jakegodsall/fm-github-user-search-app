@@ -1,5 +1,5 @@
 import Image from "next/image";
-import AccountCard from "./components/AccountCard";
+import AccountCard from "./components/AccountCard/AccountCard";
 
 export default function Home() {
     return (
