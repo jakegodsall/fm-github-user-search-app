@@ -5,10 +5,18 @@ import Header from "./components/Header/Header";
 
 export default function Home() {
     return (
-        <main className="flex flex-col items-center gap-[1.6rem]">
-            <Header />
-            <SearchBar />
-            <AccountCard />
-        </main>
+        <div className="flex flex-col items-center">
+            <main className="flex w-4/5 max-w-[33rem] flex-col items-center sm:max-w-[73rem]">
+                <div className="mb-[3.6rem] mt-[3.1rem] w-full sm:mt-[10rem]">
+                    <Header />
+                </div>
+                <div className="mb-[2.4rem] w-full">
+                    <SearchBar />
+                </div>
+                <div className="w-full">
+                    <AccountCard />
+                </div>
+            </main>
+        </div>
     );
 }
