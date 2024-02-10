@@ -6,7 +6,7 @@ import Header from "./components/Header/Header";
 export default function Home() {
     return (
         <div className="flex flex-col items-center">
-            <main className="flex w-4/5 max-w-[33rem] flex-col items-center sm:max-w-[73rem]">
+            <main className="flex w-4/5 max-w-[33rem] flex-col items-center sm:max-w-[57rem]">
                 <div className="mb-[3.6rem] mt-[3.1rem] w-full sm:mt-[10rem]">
                     <Header />
                 </div>
