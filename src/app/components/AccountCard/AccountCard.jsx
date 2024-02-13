@@ -10,7 +10,7 @@ export default function AccountCard() {
                 <div className="mb-[3.4rem]">
                     <AccountHeader />
                 </div>
-                <p className="mb-[2.4rem] text-[1.3rem] text-[#4B6A9B] sm:text-[1.5rem] md:mb-[3rem]">
+                <p className="text-textMain mb-[2.4rem] text-[1.3rem] sm:text-[1.5rem] md:mb-[3rem]">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                     Donec odio. Quisque volutpat mattis eros.
                 </p>

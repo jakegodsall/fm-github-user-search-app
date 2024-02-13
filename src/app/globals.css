@@ -4,8 +4,15 @@
 
 :root {
     --main-blue: #0079ff;
+    --text-main: #4b6a9b;
     --background: #f6f8ff;
     --foreground: #fefefe;
+}
+
+[data-theme="dark"] {
+    --text-main: #fff;
+    --background: #141d2f;
+    --foreground: #1e2a47;
 }
 
 *,

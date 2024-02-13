@@ -12,7 +12,7 @@ export default function SearchBar() {
                 <div className="flex items-center gap-[0.9rem] sm:gap-[2.3rem]">
                     <Image src={searchIcon} width="20" height="20" />
                     <input
-                        className=" py-[1.8rem] text-[1.3rem] text-[#4B6A9B] placeholder:text-[#4B6A9B] focus:outline-none sm:w-[28rem] sm:text-[1.8rem]"
+                        className=" bg-inherit py-[1.8rem] text-[1.3rem] text-[#4B6A9B] placeholder:text-[#4B6A9B] focus:outline-none sm:w-[28rem] sm:text-[1.8rem]"
                         type="text"
                         placeholder="Search..."
                     />

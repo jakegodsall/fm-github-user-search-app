@@ -1,4 +1,3 @@
-import Image from "next/image";
 import AccountCard from "./components/AccountCard/AccountCard";
 import SearchBar from "./components/SearchBar/SearchBar";
 import Header from "./components/Header/Header";

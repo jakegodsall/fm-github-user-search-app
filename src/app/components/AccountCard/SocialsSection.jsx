@@ -10,21 +10,21 @@ export default function SocialsSection() {
         <div className="grid gap-4 sm:grid-cols-2 sm:grid-rows-2">
             <div className="grid grid-cols-[4rem,_1fr]">
                 <Image src={locationIcon} alt="location" />
-                <p className="text-[1.3rem] text-[#4b6a9b]">San Francisco</p>
+                <p className="text-textMain text-[1.3rem] ">San Francisco</p>
             </div>
             <div className="grid grid-cols-[4rem,_1fr]">
                 <Image src={websiteIcon} alt="website" />
-                <p className="text-[1.3rem] text-[#4b6a9b]">
+                <p className="text-textMain text-[1.3rem] ">
                     https://github.com/blog
                 </p>
             </div>
             <div className="grid grid-cols-[4rem,_1fr]">
                 <Image src={twitterIcon} alt="twitter" />
-                <p className="text-[1.3rem] text-[#4b6a9b]">Not Available</p>
+                <p className="text-textMain text-[1.3rem] ">Not Available</p>
             </div>
             <div className="grid grid-cols-[4rem,_1fr]">
                 <Image src={companyIcon} alt="company" />
-                <p className="text-[1.3rem] text-[#4b6a9b]">@github</p>
+                <p className="text-textMain text- text-[1.3rem]">@github</p>
             </div>
         </div>
     );
