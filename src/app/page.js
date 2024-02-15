@@ -1,8 +1,14 @@
+"use client";
+
+import { useState } from "react";
+
 import AccountCard from "./components/AccountCard/AccountCard";
 import SearchBar from "./components/SearchBar/SearchBar";
 import Header from "./components/Header/Header";
 
 export default function Home() {
+    const [githubUser, setGithubUser] = useState();
+
     return (
         <div className="flex flex-col items-center">
             <main className="flex max-w-[33rem] flex-col items-center sm:w-[80%] sm:max-w-none md:max-w-[73rem]">
