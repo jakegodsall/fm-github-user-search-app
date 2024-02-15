@@ -33,12 +33,12 @@ export default function ThemeSwitcher() {
                     <p className="text-textMain] text-[1.3rem] font-bold uppercase">
                         Light
                     </p>
-                    <Image src={sunIcon} alt="moon" width="20" height="20" />
+                    <Image src={sunIcon} alt="sun" width="20" height="20" />
                 </>
             )}
             {!isDark && (
                 <>
-                    <p className="text-textMain text-[1.3rem] font-bold uppercase">
+                    <p className="text-[1.3rem] font-bold uppercase text-textMain">
                         Dark
                     </p>
                     <Image src={moonIcon} alt="moon" width="20" height="20" />

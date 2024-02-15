@@ -10,20 +10,21 @@ export default function AccountHeader() {
                 src={sunIcon}
                 width="70"
                 height="70"
+                alt="sun"
             />
             <div className="w-full">
                 <div className="flex flex-row items-center justify-between">
                     <p className="w-full text-[1.6rem] font-bold sm:text-[2.6rem]">
                         The Octocat
                     </p>
-                    <p className="text-textMain hidden w-full text-right text-[1.3rem] sm:text-[1.5rem] lg:block">
+                    <p className="hidden w-full text-right text-[1.3rem] text-textMain sm:text-[1.5rem] lg:block">
                         Joined 25 Jan 2011
                     </p>
                 </div>
                 <p className="text-[1.3rem] text-mainBlue sm:text-[1.6rem]">
                     @octocat
                 </p>
-                <p className="text-textMain text-[1.3rem] sm:text-[1.5rem] lg:hidden">
+                <p className="text-[1.3rem] text-textMain sm:text-[1.5rem] lg:hidden">
                     Joined 25 Jan 2011
                 </p>
             </div>

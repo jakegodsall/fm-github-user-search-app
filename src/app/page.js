@@ -7,7 +7,9 @@ import SearchBar from "./components/SearchBar/SearchBar";
 import Header from "./components/Header/Header";
 
 export default function Home() {
-    const [githubUser, setGithubUser] = useState();
+    const [githubUser, setGithubUser] = useState({
+        username: "",
+    });
 
     return (
         <div className="flex flex-col items-center">
@@ -16,10 +18,13 @@ export default function Home() {
                     <Header />
                 </div>
                 <div className="mb-[2.4rem] w-full">
-                    <SearchBar />
+                    <SearchBar
+                        githubUser={githubUser}
+                        setGithubUser={setGithubUser}
+                    />
                 </div>
                 <div className="w-full">
-                    <AccountCard />
+                    <AccountCard githubUser={githubUser} />
                 </div>
             </main>
         </div>
