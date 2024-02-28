@@ -7,27 +7,33 @@ import AccountHeader from "./AccountHeader";
 import SocialsSection from "./SocialsSection";
 import StatsSection from "./StatsSection";
 
-async function getGithubUser(username) {
-    let res = await fetch(`https://api.github.com/users/${username}`);
-    if (!res.ok) {
-        res = await fetch("https://api.github.com/users/octocat");
-    } else {
-        return res.json();
-    }
+/**
+ * Makes a GET request to the GitHub API to retrieve information about a user
+ * @param {string} username - The username of the GitHub user
+ * @returns {object} The user data from the GitHub API
+ */
+async function getGithubUser(username = "octocat") {
+    // Default to "octocat" if no username is provided
+    const res = await fetch(`https://api.github.com/users/${username}`);
+    return res.json();
 }
 
 export default function AccountCard({ githubUser }) {
     const [githubUserData, setGithubUserData] = useState();
 
     useEffect(() => {
-        getGithubUser("octocat").then((data) => setGithubUserData(data));
-    }, []);
+        // Fetch data for "octocat" on initial load, or the provided username if it changes
+        const username = githubUser.username || "octocat";
+        getGithubUser(username)
+            .then(setGithubUserData) // Directly use setGithubUserData
+            .catch((error) =>
+                console.error("Failed to fetch GitHub user data:", error),
+            );
+    }, [githubUser.username]);
 
-    useEffect(() => {
-        getGithubUser(githubUser.username).then((data) =>
-            setGithubUserData(data),
-        );
-    }, [githubUser]);
+    console.log(githubUserData);
+
+    if (!githubUserData) return null;
 
     return (
         <Card>
