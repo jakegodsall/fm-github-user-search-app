@@ -11,6 +11,7 @@ export default function AccountHeader() {
                 width="70"
                 height="70"
                 alt="sun"
+                priority={true}
             />
             <div className="w-full">
                 <div className="flex flex-row items-center justify-between">
