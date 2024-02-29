@@ -3,6 +3,8 @@ import Image from "next/image";
 import sunIcon from "@assets/icon-sun.svg";
 
 export default function AccountHeader({ avatar_url, name, login, created_at }) {
+    console.log("test");
+    console.log(avatar_url);
     return (
         <div className="flex w-full items-center gap-[2rem] sm:relative">
             <Image
