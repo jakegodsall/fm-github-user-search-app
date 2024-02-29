@@ -5,6 +5,15 @@ import sunIcon from "@assets/icon-sun.svg";
 export default function AccountHeader({ avatar_url, name, login, created_at }) {
     console.log("test");
     console.log(avatar_url);
+    function formatDate(datetime) {
+        const date = new Date(datetime);
+        return date.toLocaleDateString("en-GB", {
+            day: "2-digit",
+            month: "short",
+            year: "numeric",
+        });
+    }
+
     return (
         <div className="flex w-full items-center gap-[2rem] sm:relative">
             <Image
@@ -28,7 +37,7 @@ export default function AccountHeader({ avatar_url, name, login, created_at }) {
                     @{login}
                 </p>
                 <p className="text-[1.3rem] text-textMain sm:text-[1.5rem] lg:hidden">
-                    {created_at}
+                    Joined {formatDate(created_at)}
                 </p>
             </div>
         </div>
