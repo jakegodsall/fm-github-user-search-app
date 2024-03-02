@@ -9,7 +9,7 @@ export default function ThemeSwitcher() {
 
     useEffect(() => {
         setIsDark(theme === "dark");
-    }, []);
+    }, [theme]);
 
     const handleClick = () => {
         setIsDark(!isDark);
@@ -28,7 +28,7 @@ export default function ThemeSwitcher() {
         >
             {isDark && (
                 <>
-                    <p className="text-[1.3rem] font-bold uppercase text-textMain">
+                    <p className="select-none text-[1.3rem] font-bold uppercase text-textMain">
                         Light
                     </p>
                     <svg
@@ -43,7 +43,7 @@ export default function ThemeSwitcher() {
             )}
             {!isDark && (
                 <>
-                    <p className="text-[1.3rem] font-bold uppercase text-textMain">
+                    <p className="select-none text-[1.3rem] font-bold uppercase text-textMain">
                         Dark
                     </p>
                     <svg
