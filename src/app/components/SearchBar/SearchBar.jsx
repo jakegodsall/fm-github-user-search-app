@@ -20,7 +20,7 @@ export default function SearchBar({ githubUser, setGithubUser, userFound }) {
         <Card>
             <form
                 onSubmit={onSubmitHandler}
-                className="flex w-full items-center justify-between py-[0.7rem] pl-[1.3rem] pr-[0.7rem] sm:px-[1.8rem]"
+                className="flex w-full items-center justify-between py-[0.7remd] pl-[1.3rem] pr-[0.7rem] sm:px-[1.8rem]"
             >
                 <div className="relative flex items-center gap-[0.9rem] sm:gap-[2.3rem]">
                     <Image

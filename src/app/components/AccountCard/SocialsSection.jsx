@@ -28,7 +28,7 @@ export default function SocialsSection({
                 <svg
                     className={clsx(
                         "h-[2rem] w-[1.4rem] fill-current",
-                        location ? "text-white" : "text-[#8e94a3]",
+                        location ? "text-socialsColor" : "text-[#8e94a3]",
                     )}
                     xmlns="http://www.w3.org/2000/svg"
                 >
@@ -40,7 +40,7 @@ export default function SocialsSection({
                 <svg
                     className={clsx(
                         "h-[2rem] w-[2rem] fill-current",
-                        blog ? "text-white" : "text-[#8e94a3]",
+                        blog ? "text-socialsColor" : "text-[#8e94a3]",
                     )}
                     xmlns="http://www.w3.org/2000/svg"
                 >
@@ -67,7 +67,7 @@ export default function SocialsSection({
                 <svg
                     className={clsx(
                         "h-[2rem] w-[2rem] fill-current",
-                        company ? "text-white" : "text-[#8e94a3]",
+                        company ? "text-socialsColor" : "text-[#8e94a3]",
                     )}
                     xmlns="http://www.w3.org/2000/svg"
                 >

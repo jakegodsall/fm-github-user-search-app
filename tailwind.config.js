@@ -12,6 +12,7 @@ module.exports = {
                 textMain: "var(--text-main)",
                 background: "var(--background)",
                 foreground: "var(--foreground)",
+                socialsColor: "var(--socials-color)",
             },
             backgroundImage: {},
         },
