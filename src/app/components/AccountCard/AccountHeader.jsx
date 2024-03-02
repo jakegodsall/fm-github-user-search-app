@@ -3,8 +3,6 @@ import Image from "next/image";
 import sunIcon from "@assets/icon-sun.svg";
 
 export default function AccountHeader({ avatar_url, name, login, created_at }) {
-    console.log("test");
-    console.log(avatar_url);
     function formatDate(datetime) {
         const date = new Date(datetime);
         return date.toLocaleDateString("en-GB", {
