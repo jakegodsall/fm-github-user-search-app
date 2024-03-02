@@ -58,7 +58,7 @@ export default function Home() {
                         userFound={userFound}
                     />
                 </div>
-                <div className="w-full">
+                <div className="mb-[7.9rem] w-full">
                     <AccountCard githubUserData={githubUserData} />
                 </div>
             </main>
