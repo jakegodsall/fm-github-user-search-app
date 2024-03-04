@@ -28,7 +28,7 @@ export default function SearchBar({ githubUser, setGithubUser, userFound }) {
                         width="20"
                         height="20"
                         alt="magnifying glass"
-                        className="h-[2rem] w-[2rem]"
+                        className="h-[2rem] w-[2rem] select-none"
                     />
                     <input
                         className="bg-inherit py-[1.8rem] text-[1.3rem] text-[#4B6A9B] placeholder:text-[#4B6A9B] focus:outline-none sm:w-[28rem] sm:text-[1.8rem]"
