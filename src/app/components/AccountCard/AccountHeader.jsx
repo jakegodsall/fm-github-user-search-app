@@ -28,7 +28,7 @@ export default function AccountHeader({ avatar_url, name, login, created_at }) {
                         {name}
                     </p>
                     <p className="hidden w-full text-right text-[1.3rem] text-textMain sm:text-[1.5rem] lg:block">
-                        {created_at}
+                        Joined {formatDate(created_at)}
                     </p>
                 </div>
                 <p className="text-[1.3rem] text-mainBlue sm:text-[1.6rem]">
